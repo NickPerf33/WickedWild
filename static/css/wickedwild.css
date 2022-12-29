@@ -19,10 +19,16 @@ body {
     width: 50%;
 }
 
+.button-container {
+    margin-top: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .button {
-    background-color: #97927d;
-    color: #fcf2cb;
-    border: 2px solid #fcf2cb;
+    background-color: #fcf2cb;
+    color: #97927d;
+    border: 2px solid #97927d;
     border-radius: 16px;
     padding: 16px 32px;
     text-align: center;
@@ -33,7 +39,7 @@ body {
 }
 
 .button:hover {
-    background-color: #fcf2cb;
-    color: #97927d;
-    border: 2px solid #97927d;
+    background-color: #97927d;
+    color: #fcf2cb;
+    border: 2px solid #fcf2cb;
 }

@@ -34,6 +34,7 @@ body {
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
+    font-family: calder-dark-grit-shadow, sans-serif, "Courier New";
     display: inline-block;
     font-size: 16px;
     transition-duration: 0.6s;

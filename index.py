@@ -1,4 +1,7 @@
 from flask import Flask, render_template
+from database import SupabaseDB
+
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -7,7 +10,8 @@ def index():
 
 @app.route("/list")
 def list():
-    return render_template("list.html")
+    data = SupabaseDB.supabase.table("lifer_list").select("*").execute()
+    return render_template("list.html", data=data)
 
 @app.route("/edit")
 def edit():

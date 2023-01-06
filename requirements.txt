@@ -1,3 +1,3 @@
 Flask==2.0.3
-git+https://github.com/supabase-community/supabase-py/releases/tag/v0.6.0#egg=supabase-py
+git+https://github.com/supabase-community/supabase-py@develop#egg=supabase
 Jinja2==3.1.2

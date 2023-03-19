@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from database import SupabaseDB
+# from database import SupabaseDB
 
 
 app = Flask(__name__)
@@ -10,8 +10,8 @@ def index():
 
 @app.route("/list")
 def list():
-    data = SupabaseDB.supabase.table("lifer_list").select("*").execute()
-    return render_template("list.html", data=data)
+    # data = SupabaseDB.supabase.table("lifer_list").select("*").execute()
+    return render_template("list.html") #, data=data)
 
 @app.route("/edit")
 def edit():

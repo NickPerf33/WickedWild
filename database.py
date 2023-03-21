@@ -11,6 +11,6 @@ class SupabaseDB:
     :object: supabase: Supabase instance for connection to database environment
     """
 
-    url: str = os.getenv('PROJECT_URL')
-    key: str = os.getenv('API_KEY')
+    url: str = os.environ.get("SUPABASE_URL")
+    key: str = os.environ.get("SUPABASE_KEY")
     supabase: Client = create_client(url, key)

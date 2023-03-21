@@ -11,7 +11,7 @@ def index():
 @app.route("/list")
 def list():
     data = SupabaseDB.supabase.table("lifer_list").select("*").execute()
-    return render_template("list.html", data=data)
+    return render_template("list.html", data=data.data)
 
 @app.route("/edit")
 def edit():

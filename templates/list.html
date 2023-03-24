@@ -9,8 +9,29 @@
         <link rel="shortcut icon" type="image/x-icon" href="../static/images/favicon.ico"/>
     </head>
     <body>
-        {% for row in data %}
-            <p>{{ row }}</p>
-        {% endfor %}
+        <div class="base">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Common Name</th>
+                    <th>Scientific Name</th>
+                    <th>County</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Date</th>
+                </tr>
+                {% for row in data %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ row.common }}</td>
+                        <td>{{ row.scientific }}</td>
+                        <td>{{ row.county }}>}</td>
+                        <td>{{ row.state }}</td>
+                        <td>{{ row.country }}</td>
+                        <td>{{ row.date }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
     </body>
 </html>

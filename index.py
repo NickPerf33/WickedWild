@@ -16,3 +16,8 @@ def list():
 @app.route("/edit")
 def edit():
     return render_template("edit.html")
+
+@app.route("/2023")
+def big_year():
+    data = SupabaseDB.supabase.table("2023_herps").select("*").execute()
+    return render_template("2023.html", data=data.data)

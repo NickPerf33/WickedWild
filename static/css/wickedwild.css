@@ -62,8 +62,6 @@ table {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    border-collapse: collapse;
-    border-radius:4px;
 }
 
 th, td {
@@ -83,7 +81,6 @@ td.highlight {
 td.highlight div {
     width:4px;
     height:60px;
-    border-radius:4px;
     transition: all 0.2s ease-in-out;
 }
 

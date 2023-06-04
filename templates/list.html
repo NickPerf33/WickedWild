@@ -25,13 +25,13 @@
                 {% for row in data %}
                     <tr class="row">
                         <td class="highlight"><div></div></td>
-                        <td class="leftBorder">{{ loop.index }}</td>
+                        <td>{{ loop.index }}</td>
                         <td>{{ row.common }}</td>
                         <td>{{ row.scientific }}</td>
                         <td>{{ row.county }}</td>
                         <td>{{ row.state }}</td>
                         <td>{{ row.country }}</td>
-                        <td class="rightBorder">{{ row.date }}</td>
+                        <td>{{ row.date }}</td>
                         <td class="highlight"><div></div></td>
                     </tr>
                 {% endfor %}

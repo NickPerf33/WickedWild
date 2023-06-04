@@ -75,12 +75,12 @@ td {
     transition: all 0.2s ease-in-out;
 }
 
-td.highlight {
+td.highlightLeft, td.highlightRight {
     padding:0;
     width:4px;
 }
 
-td.highlight div {
+td.highlightLeft div, td.highlightRight div {
     width:4px;
     height:60px;
     border-radius:4px;
@@ -103,6 +103,14 @@ tr:hover td {
     z-index:7;
 }
 
-tr:hover td.highlight div {
+tr:hover td.highlightLeft div, tr:hover td.highlightRight div {
     transform: scaleX(3);
+}
+
+td.highlightLeft:hover {
+    border-left: 1px solid grey;
+}
+
+td.highlightRight:hover {
+    border-right: 1px solid grey;
 }

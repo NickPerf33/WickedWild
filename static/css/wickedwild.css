@@ -74,33 +74,30 @@ td {
 }
 
 td.highlight {
-  padding:0;
-  width:4px;
+    padding:0;
+    width:4px;
 }
 
 td.highlight div {
-  width:4px;
-  height:60px;
-  border-radius:4px;
-  transition: all 0.2s ease-in-out;
+    width:4px;
+    height:60px;
+    border-radius:4px;
+    transition: all 0.2s ease-in-out;
 }
 
 .row:hover {
- box-shadow: 0px 9px 4px -6px grey;
+    box-shadow: 0px 9px 4px -6px grey;
+    cursor:pointer;
+    color:#0C991F;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 .row {
-  border: 1px solid transparent;
-  z-index:7;
-}
-
-tr:hover td {
-  cursor:pointer;
-  color:#0C991F;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+    border: 1px solid transparent;
+    z-index:7;
 }
 
 tr:hover td.highlight div {
-  transform: scaleX(3);
+    transform: scaleX(3);
 }

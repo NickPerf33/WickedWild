@@ -19,10 +19,9 @@
                     <th>State</th>
                     <th>Country</th>
                     <th>Date</th>
-                    <th>Tags</th>
                 </tr>
                 {% for row in data %}
-                    <tr>
+                    <a href="https://en.wikipedia.org/w/index.php?title=" + row.scientific.split()[0] + "_" + row.scientific.split()[1] + "&redirect=yes"><tr>
                         <td>{{ loop.index }}</td>
                         <td>{{ row.common }}</td>
                         <td>{{ row.scientific }}</td>
@@ -30,8 +29,7 @@
                         <td>{{ row.state }}</td>
                         <td>{{ row.country }}</td>
                         <td>{{ row.date }}</td>
-                        <td>{{ row.tags[0] }}</td>
-                    </tr>
+                    </tr></a>
                 {% endfor %}
             </table>
         </div>

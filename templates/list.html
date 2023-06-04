@@ -46,7 +46,7 @@
                         
                         let page = "https://en.wikipedia.org/w/index.php?title=";
                         let queryString = "&redirect=yes";
-                        window.open("${page}${scientific_name}${queryString}", "_blank");
+                        window.open(page + scientific_name + queryString, "_blank");
                     };
                 };
                 currentRow.onclick = createClickHandler(currentRow);

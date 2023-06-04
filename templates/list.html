@@ -21,7 +21,7 @@
                     <th>Date</th>
                 </tr>
                 {% for row in data %}
-                    <a href="https://en.wikipedia.org/w/index.php?title=" + row.scientific.split()[0] + "_" + row.scientific.split()[1] + "&redirect=yes"><tr>
+                    <a href="https://en.wikipedia.org/w/index.php?title={{ row.scientific|replace(' ', '_') }}&redirect=yes"><tr>
                         <td>{{ loop.index }}</td>
                         <td>{{ row.common }}</td>
                         <td>{{ row.scientific }}</td>

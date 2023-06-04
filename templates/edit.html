@@ -10,27 +10,27 @@
     </head>
     <body>
         <div class="base">
-        <form>
-            <label for="table">Lifer List</label>
-            <input type="radio" id="lifer" name="table" value="lifer_list">
-            <label for="table">2023 Big Year</label>
-            <input type="radio" id="2023" name="table" value="2023_herps"><br><br>
-            <label for="common">Common name:</label>
-            <input type="text" id="common" name="common"><br><br>
-            <label for="science">Scientific name:</label>
-            <input type="text" id="science" name="science"><br><br>
-            <label for="county">County:</label>
-            <input type="text" id="county" name="county"><br><br>
-            <label for="state">State:</label>
-            <input type="text" id="state" name="state"><br><br>
-            <label for="country">Country:</label>
-            <input type="text" id="country" name="country"><br><br>
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date"><br><br>
-            <label for="tags">Tags:</label>
-            <input type="text" id="tags" name="tags"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+            <form action="/confirm.php" method="POST">
+                <label for="table">Lifer List:</label>
+                <input type="radio" id="lifer" name="table" value="lifer_list" required>
+                <label for="table">2023 Big Year:</label>
+                <input type="radio" id="2023" name="table" value="2023_herps" required><br><br>
+                <label for="common">Common name:</label>
+                <input type="text" id="common" name="common" required><br><br>
+                <label for="science">Scientific name:</label>
+                <input type="text" id="science" name="science" required><br><br>
+                <label for="county">County:</label>
+                <input type="text" id="county" name="county" placeholder="Norfolk"><br><br>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" maxlength="2" placeholder="MA"><br><br>
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" maxlength="2" placeholder="US"><br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="tags">Tags:</label>
+                <input type="text" id="tags" name="tags" placeholder="REPTILE, SNAKE"><br><br>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </body>
 </html>

@@ -41,9 +41,7 @@
                 var currentRow = table.rows[i];
                 var createClickHandler = function(row) {
                     return function() {
-                        var cell = row.getElementsByTagName("td")[0];
-                        var id = cell.innerHTML;
-                        window.open("https://en.wikipedia.org/w/index.php?title=&redirect=yes", "_blank");
+                        window.open("https://en.wikipedia.org/w/index.php?title={{ row.scientific|replace(' ', '_') }}&redirect=yes", "_blank");
                     };
                 };
                 currentRow.onclick = createClickHandler(currentRow);

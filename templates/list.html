@@ -41,7 +41,9 @@
                 var currentRow = table.rows[i];
                 var createClickHandler = function(row) {
                     return function() {
-                        window.open("https://en.wikipedia.org/w/index.php?title={{ row.scientific|replace(' ', '_') }}&redirect=yes", "_blank");
+                        var scientificName = row.getElementsByTagName("td")[2];
+                        var scientific_name = scientificName.replace(" ", "_");
+                        window.open("https://en.wikipedia.org/w/index.php?title=" + scientific_name + "&redirect=yes", "_blank");
                     };
                 };
                 currentRow.onclick = createClickHandler(currentRow);

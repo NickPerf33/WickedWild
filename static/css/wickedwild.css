@@ -92,7 +92,8 @@ td.highlight div {
 tr:hover td {
     cursor:pointer;
     color:#0C991F;
-    border: 1px solid grey;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
 }
 
 .row {

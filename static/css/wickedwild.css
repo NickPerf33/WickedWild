@@ -62,6 +62,8 @@ table {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    border-collapse: collapse;
+    border-radius:4px;
 }
 
 th, td {
@@ -92,8 +94,8 @@ td.highlight div {
 tr:hover td {
     cursor:pointer;
     color:#0C991F;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 .row {

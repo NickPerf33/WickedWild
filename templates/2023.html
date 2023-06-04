@@ -45,10 +45,9 @@
                 var currentRow = table.rows[i];
                 var createClickHandler = function(row) {
                     return function() {
-                        var scientificName = row.getElementsByTagName("td")[2].innerHTML;
+                        var scientificName = row.getElementsByTagName("td")[3].innerHTML;
                         var scientific_name = scientificName.replace(" ", "_");
-                        alert(scientificName + " " scientific_name)
-                        // window.open("https://en.wikipedia.org/w/index.php?title=" + scientific_name + "&redirect=yes", "_blank");
+                        window.open("https://en.wikipedia.org/w/index.php?title=" + scientific_name + "&redirect=yes", "_blank");
                     };
                 };
                 currentRow.onclick = createClickHandler(currentRow);

@@ -24,4 +24,5 @@ def big_year():
     return render_template("2023.html", data=data.data)
 
 @app.route("/", subdomain="shadow")
+def shadow():
     return render_template("shadow.html")

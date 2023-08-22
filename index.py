@@ -2,7 +2,8 @@ from flask import Flask, render_template
 from database import SupabaseDB
 
 
-app = Flask(__name__)
+app = Flask(__name__, subdomain_matching=True)
+app.config['SERVER_NAME'] = "wickedwild.life"
 
 @app.route("/")
 def index():

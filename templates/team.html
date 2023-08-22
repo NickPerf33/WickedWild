@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lifer List</title>
+        <link rel="stylesheet" href="https://wickedwild.life/static/css/wickedwild.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="https://wickedwild.life/static/images/favicon.ico"/>
+    </head>
+    <body>
+        <div class="base">
+            <table id="liferList">
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                {% for row in data %}
+                    <tr class="row">
+                        <td class="highlight"><div></div></td>
+                        <td>Justin Fields</td>
+                        <td>Amon-Ra St. Brown</td>
+                        <td class="highlight"><div></div></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </body>
+</html>

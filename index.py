@@ -30,19 +30,23 @@ def shadow():
 @app.route("/reapers", subdomain="shadow")
 def reapers():
     #data = SupabaseDB.supabase.table("reapers").select("*").execute()
-    return render_template("team.html", data=data.data)
-
+    #return render_template("team.html", data=data.data)
+    return render_template("team.html")
+    
 @app.route("/nor-easters", subdomain="shadow")
 def nor_easters():
     #data = SupabaseDB.supabase.table("nor_easters").select("*").execute()
-    return render_template("team.html", data=data.data)
+    #return render_template("team.html", data=data.data)
+    return render_template("team.html")
 
 @app.route("/black-squirrels", subdomain="shadow")
 def black_squirrels():
     #data = SupabaseDB.supabase.table("black_squirrels").select("*").execute()
-    return render_template("team.html", data=data.data)
+    #return render_template("team.html", data=data.data)
+    return render_template("team.html")
 
 @app.route("/free-agents", subdomain="shadow")
 def free_agents():
     #data = SupabaseDB.supabase.table("free_agents").select("*").execute()
-    return render_template("team.html", data=data.data)
+    #return render_template("team.html", data=data.data)
+    return render_template("team.html")
